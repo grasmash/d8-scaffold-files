@@ -1,0 +1,21 @@
+{
+  "name": "acquia/d8-scaffold-files",
+  "require": {
+    "composer/installers": "^1.2",
+    "drupal/composer-scaffold": "*",
+  },
+  "require-dev": {
+    "composer/composer": "^1.8@stable"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "extra": {
+    "composer-scaffold": {
+      "locations": {
+        "web-root": "./docroot"
+      }
+    }
+  }
+}

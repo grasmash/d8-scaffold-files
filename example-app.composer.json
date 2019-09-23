@@ -1,0 +1,22 @@
+{
+  "name": "my/project",
+  "require": {
+    "acquia/d8-scaffold-files": "^1",
+    "cweagans/composer-patches": "^1.6.5",
+    "drupal/core": "^8.8.x-dev",
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "extra": {
+    "composer-scaffold": {
+      "allowed-packages": [
+        "drupal/core"
+      ],
+      "locations": {
+        "web-root": "./docroot"
+      }
+    }
+  }
+}
