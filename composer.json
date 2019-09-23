@@ -10,12 +10,5 @@
   "config": {
     "optimize-autoloader": true,
     "sort-packages": true
-  },
-  "extra": {
-    "composer-scaffold": {
-      "locations": {
-        "web-root": "./docroot"
-      }
-    }
   }
 }
