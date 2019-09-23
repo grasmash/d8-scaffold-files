@@ -1,0 +1,38 @@
+{
+  "name": "my/project",
+  "repositories": {
+    "acquia/d8-scaffold-files": {
+      "type": "path",
+      "url": "../d8-scaffold-files",
+      "options": {
+        "symlink": true
+      }
+    },
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  },
+  "require": {
+    "acquia/d8-scaffold-files": "*@dev",
+    "cweagans/composer-patches": "^1.6.5",
+    "drupal/core-recommended": "^8.7.0"
+  },
+  "require-dev": {
+    "drupal/dev-dependencies": "^8.7.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "extra": {
+    "composer-scaffold": {
+      "allowed-packages": [
+        "drupal/core"
+      ],
+      "locations": {
+        "web-root": "./docroot"
+      }
+    }
+  }
+}
